@@ -1,0 +1,20 @@
+# FastAPI and server dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# TTS and audio processing
+piper-tts==1.2.0
+rvc-python==0.1.5
+
+# Audio processing and utilities
+numpy>=1.21.0
+scipy>=1.7.0
+soundfile>=0.12.1
+
+# HTTP requests for model downloads
+urllib3>=1.26.0
+requests>=2.28.0
+
+# Optional: for better audio processing
+librosa>=0.10.0

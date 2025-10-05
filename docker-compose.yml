@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  tts-server-autotuned:
+    build:
+      context: .
+      dockerfile: Dockerfile.autotuned
+    ports:
+      - "8430:8000"
+    volumes:
+      - ./models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
