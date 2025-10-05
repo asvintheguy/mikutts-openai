@@ -4,7 +4,6 @@ services:
   tts-server-autotuned:
     build:
       context: .
-      dockerfile: Dockerfile.autotuned
     ports:
       - "8430:8000"
     volumes:
